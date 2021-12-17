@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* import font poppins & opan sans */
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&display=swap");
+
+      /* document style */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+        background-size: auto;
+      }
+      .bg-img {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .img-section img {
+        width: 100%;
+      }
+      .text-section h1 {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.5em;
+        font-weight: 600;
+        font-size: 2.5em;
+      }
+      .text-section p {
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.5em;
+      }
+      .text-section button {
+        font-family: "Open Sans", sans-serif;
+        padding: 0.7em 2.5em;
+        border-radius: 2em;
+        border: none;
+        background-color: white;
+        color: hsl(257, 40%, 49%);
+      }
+      .text-section button:hover {
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+      }
+      #icons {
+        font-size: 2.5em;
+        color: whitesmoke;
+        margin: 0 0.3em;
+      }
+      /* Desktop */
+      @media (min-width: 768px) {
+        .bg-img {
+          background-image: url(./images/bg-desktop.svg);
+        }
+      }
+      /* Mobile */
+      @media (max-width: 767px) {
+        .bg-img {
+          background-image: url(./images/bg-mobile.svg);
+        }
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin: 0;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bg-img">
+      <div class="container">
+        <nav
+          class="
+            navbar
+            mb-4
+            d-flex
+            justify-content-center justify-content-md-start
+          "
+        >
+          <div class="navbar-brand">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+        </nav>
+        <section class="mt-4">
+          <div class="d-flex flex-md-row flex-column">
+            <div class="col-12 col-md-7">
+              <div class="img-section">
+                <img src="./images/illustration-mockups.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="text-section m-5 py-4">
+                <div class="text-white">
+                  <h1 class="h1 mb-2 text-center text-md-start">
+                    Build The Community Your Fans Will Love
+                  </h1>
+                  <p class="text-center text-md-start">
+                    Huddle re-imagines the way we build communities. You have a
+                    voice, but so does your audience. Create connections with
+                    your users as you engage in genuine discussion.
+                  </p>
+                </div>
+                <div
+                  class="d-flex justify-content-center justify-content-md-start"
+                >
+                  <button>Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="d-flex justify-content-center justify-content-md-end">
+          <ul class="d-flex list-unstyled me-4">
+            <li><i id="icons" class="fab fa-facebook"></i></li>
+            <li><i id="icons" class="fab fa-instagram"></i></li>
+            <li><i id="icons" class="fab fa-twitter"></i></li>
+          </ul>
+        </div>
+
+        <footer>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Aung Kyaw Oo</a>.
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  </body>
+</html>
